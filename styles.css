@@ -1,0 +1,42 @@
+@keyframes Down {
+    from {opacity: 0;transform: translateX(-100px);}
+    to {opacity: 1;transform: translateX(0);}
+}
+/*#1A1A1D, #05386B, #66FCF1*/
+
+body{
+    line-height: 1;
+    background-color: #fff;
+    color: #222;
+}
+.light-mode{
+    background-color: #fff;
+    color: #222;
+}
+
+.header-global{
+    padding: 1.25rem .625rem .625rem;
+    margin: 0 auto;
+    font-family: 'News Cycle', sans-serif;
+}
+.header-top{
+    position: relative;
+}
+.header-top h1{
+    flex: 4 1 200px;
+    font-family: 'Anonymous Pro', monospace;
+    border-bottom: 3px solid #222;
+}
+.header-top #links a{
+    position: relative;
+    float: right;
+    bottom: 3rem;
+    padding-left: 1rem;
+    font-size: large;
+}
+
+
+.site-wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+}
