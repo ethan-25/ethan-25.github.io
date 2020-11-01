@@ -1,8 +1,11 @@
-@keyframes Down {
-    from {opacity: 0;transform: translateX(-100px);}
-    to {opacity: 1;transform: translateX(0);}
+@keyframes down {
+    from {opacity: 0;transform: translateY(-50px);}
+    to {opacity: 1;transform: translateY(0);}
 }
-/*#1A1A1D, #05386B, #66FCF1*/
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 body{
     line-height: 1;
@@ -18,6 +21,7 @@ body{
     padding: 1.25rem .625rem .625rem;
     margin: 0 auto;
     font-family: 'News Cycle', sans-serif;
+    animation: down 0.75s;
 }
 .header-top{
     position: relative;
@@ -27,16 +31,55 @@ body{
     font-family: 'Anonymous Pro', monospace;
     border-bottom: 3px solid #222;
 }
-.header-top #links a{
+#links a{
     position: relative;
     float: right;
     bottom: 3rem;
-    padding-left: 1rem;
+    margin-left: 1rem;
     font-size: large;
+    transition: 0.25s;
+    text-decoration: none;
+    color: #222;
+}
+#links a:hover{
+    -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
+
+.header-bot{
+    position: relative;
+    bottom: 1rem;   
+}
+.header-bot img{
+    height: 32px;
+    transition: 0.25s;
+}
+.header-bot img:hover{
+    opacity: 0.5;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.site-main{
+    opacity: 0;
+    animation: fade 1s;
+    animation-delay: 0.85s;
+    animation-fill-mode: forwards;
+    margin-top: 2.5rem;
+}
 
 .site-wrapper{
     max-width: 1024px;
     margin: 0 auto;
+}
+
+.banner{
+    width: 100%;
+    padding: 15px 0 15px 0;
+    border: 3px solid #222;
+}
+.banner-text{
+    text-align: center;
+    font-family: 'Anonymous Pro', monospace;
 }
