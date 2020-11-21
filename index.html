@@ -1,39 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ethan Kuoch Portfolio</title>
+        <title>Test</title>
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/icon.png" type="image/gif">
         <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#right").click(function(){
+                    $("#div1").fadeOut(500);
+                    $("#div2").fadeIn(1000);
+                });
+            });
+            $(document).ready(function(){
+                $("#left").click(function(){
+                    $("#div2").fadeOut(500);
+                    $("#div1").fadeIn(1000);
+                });
+            });
+        </script>
     </head>
     <body>
-        <header class="header-global">
-            <div class="site-wrapper header-top">
-                <div class="name">
-                    <h1>ethan.kuoch</h1>
-                </div>
-                <div id="links">
-                    <a href="resume.pdf" target="_blank">resume</a>
-                    <a href="#projects" >projects</a>
-                    <a href="#skills">skills</a>
-                    <a href="#aboutme">about me</a>
+        <div class="navigation">
+            <a id="left" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="15 6 9 12 15 18" />
+                </svg>
+            </a>
+            <a id="right" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="9 6 15 12 9 18" />
+                </svg>
+            </a>
+        </div>
+        <div class="content" id="div1">
+            <div class="cube">
+                <div class="grad"></div>
+            </div>
+            <div class="text">
+                <div class="name"><h1>ethan kuoch</h1></div>
+                <div class="links">
+                    <a href="https://github.com/ethan-25" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ethankuoch/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <line x1="8" y1="11" x2="8" y2="16" />
+                            <line x1="8" y1="8" x2="8" y2="8.01" />
+                            <line x1="12" y1="16" x2="12" y2="11" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg>
+                    </a>
+                    <a href="resume.pdf" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-text" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                            <line x1="9" y1="9" x2="10" y2="9" />
+                            <line x1="9" y1="13" x2="15" y2="13" />
+                            <line x1="9" y1="17" x2="15" y2="17" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-            <div class="site-wrapper header-bot">
-                <a href="https://github.com/ethan-25" target="_blank"><img src="images/github_32.png"></a>
-                <a href="https://www.linkedin.com/in/ethankuoch/" target="_blank" style="margin-left: 1.5rem;"><img src="images/li.png"></a>
-            </div>
-        </header>
-        <div class="site-main">
-            <div class="site-wrapper" id="wrapper">
-                <div class="banner" id="aboutme">
-                    <div class="banner-text">about me.</div>
+        </div>
+        <div class="content" id="div2" style="display: none;">
+            <div class="title"><h1>projects</h1></div>
+            <div class="project">
+                <img src="images/linguine.png">
+                <div class="title">
+                    <h3>Linguine</h3>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+                            <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+                        </svg>
+                    </a>
                 </div>
-                <div class="content">
-                    <div class="about"></div>
-                </div>
+                <p>Social media web app where users can make posts with text and images.</p>
             </div>
         </div>
     </body>
