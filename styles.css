@@ -6,7 +6,7 @@ body{
     position: absolute;
     display: flex;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 60%);
     margin-top: 23rem;
     opacity: 0;
     animation: fade 1s;
@@ -38,7 +38,7 @@ body{
 .content{
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 90%);
 }
 .cube {
     height: 13.25em;
