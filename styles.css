@@ -25,7 +25,6 @@ body {
   transition: 0.5s;
 }
 .links svg:hover {
-  -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
@@ -60,6 +59,15 @@ body {
   font-family: "Inter", sans-serif;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#divprojects {
+  transform: translate(-58%, 17rem);
 }
 
 /* Text CSS */
@@ -109,7 +117,7 @@ h1 {
     top: -0.5rem;
   }
   #divprojects {
-    top: 4rem;
+    bottom: 50%;
   }
 }
 
