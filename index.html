@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ethan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icon.png" type="image/gif" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- These scripts cause the fade in/out when cicking on a menu icon-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#projects").click(function () {
+          $("#divhome").fadeOut(500);
+          $("#divinfo").fadeOut(500);
+          $("#divprojects").fadeIn(1000);
+        });
+      });
+      $(document).ready(function () {
+        $("#home").click(function () {
+          $("#divprojects").fadeOut(500);
+          $("#divinfo").fadeOut(500);
+          $("#divhome").fadeIn(1000);
+        });
+      });
+      $(document).ready(function () {
+        $("#info").click(function () {
+          $("#divhome").fadeOut(500);
+          $("#divprojects").fadeOut(500);
+          $("#divinfo").fadeIn(1000);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+
+<!-- Menu/Navigation Bar-->
+<!-- All icons used are from https://tablericons.com using MIT License-->
+
+    <div class="links" id="menu">
+      <a id="home" href="#"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-home"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <polyline points="5 12 3 12 12 3 21 12 19 12" />
+          <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+          <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+        </svg>
+      </a>
+      <a id="info" href="#"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-info-circle"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="9" />
+          <line x1="12" y1="8" x2="12.01" y2="8" />
+          <polyline points="11 12 12 12 12 16 13 16" />
+        </svg>
+      </a>
+      <a id="projects" href="#"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-box"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
+          <line x1="12" y1="12" x2="20" y2="7.5" />
+          <line x1="12" y1="12" x2="12" y2="21" />
+          <line x1="12" y1="12" x2="4" y2="7.5" />
+        </svg>
+      </a>
+
+      <a href="mailto:ethan@yeneric.com"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-mail"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <polyline points="3 7 12 13 21 7" />
+        </svg>
+      </a>
+    </div>
+
+<!-- Home Tab-->
+
+    <div class="content" id="divhome">
+      <div class="cube">
+        <div class="grad"></div>
+      </div>
+      <div class="text">
+        <div class="name"><h1>ethan kuoch</h1></div>
+
+        <!-- Links to my LinkedIn, GitHub, etc.-->
+        <div class="links">
+          <a href="https://github.com/ethan-25" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-github"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#f0f0ef"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ethankuoch/" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-linkedin"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#f0f0ef"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="4" y="4" width="16" height="16" rx="2" />
+              <line x1="8" y1="11" x2="8" y2="16" />
+              <line x1="8" y1="8" x2="8" y2="8.01" />
+              <line x1="12" y1="16" x2="12" y2="11" />
+              <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+            </svg>
+          </a>
+          <a href="resume.pdf" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-file-text"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#f0f0ef"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+              <path
+                d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"
+              />
+              <line x1="9" y1="9" x2="10" y2="9" />
+              <line x1="9" y1="13" x2="15" y2="13" />
+              <line x1="9" y1="17" x2="15" y2="17" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Tab-->
+
+    <div class="content" id="divinfo" style="display: none">
+      <div class="card">
+        <div class="title">
+          <h1>about me</h1>
+        </div>
+        <p>Hey, my name is Ethan. I'm currently studying Computer Science at Drexel University.</p>
+        <p>Some of my personal hobbies include playing videogames🎮, following Philly sports🏀, reading📚, and listening to music.🎧</p>
+      </div>  
+      </div>
+    </div>
+
+<!-- Projects Tab-->
+
+    <div class="content" id="divprojects" style="display: none">
+
+      <div class="card" id="title-card">
+        <div class="title"><h1>projects</h1></div>
+      </div>
+
+      <div class="grid-cards">
+        <div class="card">
+        <div class="title">
+          <h3>Shot Clock</h3>
+          <a href="https://github.com/ethan-25/shot-clock" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-link"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+              />
+              <path
+                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <p>
+          Web app where users can look up NBA players and see their stats.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="title">
+          <h3>Only Philly Sports</h3>
+          <a href="https://github.com/ethan-25/only-philly-sports" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-link"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+              />
+              <path
+                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <p>
+          MS Edge extension that displays today's scheduled Philadelphia sports games.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="title">
+          <h3>Hearthstone Deck Saver</h3>
+          <a href="https://github.com/ethan-25/hs-deck-saver" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-link"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+              />
+              <path
+                d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <p>
+          Web app to save Hearthstone decks from deck codes.
+        </p>
+      </div>
+      </div>
+      
+    </div>
+
+  </body>
+</html>
