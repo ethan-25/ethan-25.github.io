@@ -65,7 +65,9 @@ body {
   display: grid;
   grid-template-columns: auto auto;
 }
-
+#title-card {
+  margin-left: 7rem;
+}
 #divprojects {
   transform: translate(-58%, 17rem);
 }
@@ -85,7 +87,6 @@ body {
 }
 .text {
   height: 100px;
-  left: 50%;
   top: 500px;
   opacity: 0;
   animation: fade 1s;
@@ -102,13 +103,15 @@ h1 {
 @media (max-width: 800px) {
   .content {
     position: absolute;
-    left: 50%;
     transform: translate(-50%, 75%);
+  }
+  .grid-cards {
+    display: block;
+    margin-left: 7rem;
   }
   #menu {
     position: absolute;
     display: flex;
-    right: 50%;
     transform: translate(45%, 10rem);
     opacity: 0;
     animation-fill-mode: forwards;
@@ -117,7 +120,10 @@ h1 {
     top: -0.5rem;
   }
   #divprojects {
-    bottom: 50%;
+    transform: translate(-50%, 35%);
+  }
+  #title-card {
+    margin-right: 7rem;
   }
 }
 
